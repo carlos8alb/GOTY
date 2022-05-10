@@ -31,7 +31,10 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+              "clone-deep"
+           ]
           },
           "configurations": {
             "production": {
@@ -122,8 +125,19 @@
               "devServerTarget": "goty:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "goty:build:production",
+            "firebaseProject": "firestore-grafica-e1f58",
+            "firebaseHostingSite": "firestore-grafica-e1f58"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "goty"
 }

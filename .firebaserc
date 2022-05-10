@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firestore-grafica-e1f58": {
+      "hosting": {
+        "goty": [
+          "firestore-grafica-e1f58"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firestore-grafica-e1f58"
+  }
+}
